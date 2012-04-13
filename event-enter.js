@@ -25,4 +25,8 @@ $.event.special.enter = {
 		}
 	}
 }
+
+$.fn.extend({
+	enter: function() { $(this).bind('enter', arguments[0]); },
+});
 });
